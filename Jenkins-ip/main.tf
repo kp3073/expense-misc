@@ -15,12 +15,12 @@ resource "aws_route53_record" "jenkins_dns" {
   type    = "A"
   zone_id = "Z03008653NMBFHGJP7YNJ"
   records = [data.aws_instance.instance.public_ip]
-  ttl = 10
+  ttl     = 10
 }
 
 
 data "aws_instance" "artifactory" {
-  instance_id = "i-0deaf763a522662a7"
+  instance_id = "i-067e50bfa87ddff29"
 }
 
 resource "aws_route53_record" "jenkins_dns" {
