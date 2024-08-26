@@ -30,3 +30,7 @@ resource "aws_route53_record" "jenkins_dns" {
   records = [data.aws_instance.artifactory.public_ip]
   ttl     = 10
 }
+
+
+
+
