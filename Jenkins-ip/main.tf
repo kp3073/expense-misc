@@ -32,6 +32,6 @@ resource "aws_route53_record" "artifactory_dns" {
 }
 
 
-curl  sSf -u "admin : Canada1991$" -X PUT -T text.txt 'http://artifactory.aligntune.online:8081/demo/text.txt'
+
 
 
