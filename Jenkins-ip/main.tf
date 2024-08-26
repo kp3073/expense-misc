@@ -23,7 +23,7 @@ data "aws_instance" "artifactory" {
   instance_id = "i-067e50bfa87ddff29"
 }
 
-resource "aws_route53_record" "jenkins_dns" {
+resource "aws_route53_record" "artifactory_dns" {
   name    = "artifactory.aligntune.online"
   type    = "A"
   zone_id = "Z03008653NMBFHGJP7YNJ"
